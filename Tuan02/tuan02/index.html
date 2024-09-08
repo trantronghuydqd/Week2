@@ -1,0 +1,58 @@
+<!-- Mark and John are trying to compare their BMI (Body Mass Index), which is
+calculated using the formula:
+BMI = mass / height ** 2 = mass / (height * height) (mass in kg
+and height in meter).
+Your tasks:
+1. Store Mark's and John's mass and height in variables
+2. Calculate both their BMIs using the formula (you can even implement both
+versions)
+3. Create a Boolean variable 'markHigherBMI' containing information about
+whether Mark has a higher BMI than John. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //challenge 1
+        // 1. luu tru chieu cao can nang
+        var markMass = 80;
+        var markHeight = 1.8;
+
+        var johnMass = 75;
+        var johnHeight = 1.75;
+
+        // 2. Tinh BMIs
+        var markBMI = markMass / (markHeight * markHeight);
+        var johnBMI = johnMass / (johnHeight * johnHeight);
+        console.log(markBMI);
+        console.log(johnBMI);
+        // 3. So sanh
+        var markHigherBMI = markBMI > johnBMI;
+        console.log(markHigherBMI);
+
+
+        // challenge 2
+        // 1. in output
+        if (markHigherBMI) {
+            console.log(`Mark's BMI is higher than John's!`);
+        } else {
+            console.log(`John's BMI is higher than Mark's!`);
+        }
+
+        // 2. Template literal
+        if (markHigherBMI) {
+            console.log(`Mark's BMI ${markBMI} is higher than John's ${johnBMI}!`);
+        } else {
+            console.log(`John's BMI ${johnBMI} is higher than Mark's ${markBMI}!`);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
